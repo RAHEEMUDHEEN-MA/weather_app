@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .TopBar {
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(95, 123, 160, 0.597);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TopBarContaniner {
+    width: 80%;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchBar {
+    background-color: aliceblue;
+    width: 400px;
+    height: 50px;
+  
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .searchBar input {
+    border: none;
+    background: none;
+    font-size: 18px;
+  }
+  
+  .searchBar input:focus {
+    outline: none;
+    border: none;
+  }
+  .searchBar button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(68, 141, 237);
+  }
+  .searchBar button img {
+    height: 25px;
+    width: 25px;
+  }
+  
+  /* --------------------------------------------------------- */
+  
+  
+  .mainBar{
+      width: 100%;
+      height: 44vh;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  
+  /* ------------------------------------------------------------------- */
+  
+  .thirdBar {
+      position: relative;
+      width: 100%;
+      height: 44vh;
+  }
+  
+  .locationMap {
+    position: absolute;
+      width: 100%;
+      height: 44vh;
+      z-index: -10;
+  }
+  
+  .thirdBarContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.455);
+    z-index: 0;
+  }
+  
+  
+  .thirdContent {
+      position: absolute;
+      top: 10%; /* Example: Centering the content vertically */
+      left: 45%; /* Example: Centering the content horizontally */
+    color: white;
+      z-index: 1;
+      text-align: center;
+      
+  
+  }
+  
