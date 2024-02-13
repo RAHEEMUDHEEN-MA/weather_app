@@ -8,27 +8,71 @@ import searchicon from "./Assets/icons8-search-48.png";
 import dayIMG from "./Assets/day.jpg";
 import nightIMg from "./Assets/night.jpg";
 
+
+
 const Home_Weather = () => {
+
+
+
+//   const API_KEY = '9d988ae74f104cb19ffdc60a930b1e1a';
+// const BASE_URL = 'https://api.weatherbit.io/v2.0/current';
+
+// // Specify the parameters (e.g., latitude, longitude) for your request
+// const params = {
+//     lat: 40.7128,
+//     lon: -74.0060,
+//     key: API_KEY
+// };
+
+// // Construct the URL with query parameters
+// const url = new URL(BASE_URL);
+// url.search = new URLSearchParams(params).toString();
+
+// // Make the API request using fetch
+// fetch(url)
+//     .then(response => {
+//         // Check if the request was successful (status code 200)
+//         if (!response.ok) {
+//             throw new Error('Failed to retrieve data');
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         // Handle the response data as needed
+//         console.log("weather bit: ",data);
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
+
+
+
+
+
+  // ------------------------------------------------------
     const [data, setdata] = useState([]);
 
-    const [location, setlocation] = useState("india");
+    const [location, setlocation] = useState("kerala");
     const [longitude, setlongitude] = useState("");
     const [latitude, setlatitude] = useState("");
     const [data_time, setdata_time] = useState("");
     const [day, setday] = useState("day");
+    // console.log("api key",process.env.API_KEY)
   
   
-    const search = (event) => {
+    const search =async (event) => {
       console.log(location);
       if (event.key === "Enter") {
-        axios
+      await  axios
           .get(
+            // `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.API_KEY}`
             `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=c0d290eeee9dd399b017a6d2ba64be7e`
+            // `https://api.weatherbit.io/v2.0/current,`
           )
           .then((demo) => {
             setdata([demo.data]);
   
-            console.log("weather!!:", location, demo.data);
+            console.log("weather!!:", location, demo); 
             setlongitude(demo.data.coord.lon);
             setlatitude(demo.data.coord.lat);
             console.log(longitude, latitude);
