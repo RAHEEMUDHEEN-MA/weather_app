@@ -48,7 +48,7 @@ const Home_Weather = () => {
         .get(
           // `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.API_KEY}`
           `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=c0d290eeee9dd399b017a6d2ba64be7e`
-          // `https://api.weatherbit.io/v2.0/current,`
+       
         )
         .then((demo) => {
           setdata(demo.data);
@@ -56,7 +56,7 @@ const Home_Weather = () => {
           console.log("weather!!:", location,data);
           setlongitude(demo.data.coord.lon);
           setlatitude(demo.data.coord.lat);
-          // console.log(longitude, latitude);
+          
         })
         .catch((error) => {
           alert("Location not found");
