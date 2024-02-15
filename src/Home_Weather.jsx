@@ -28,13 +28,7 @@ const Home_Weather = () => {
   //         }
   //         return response.json();
   //     })
-  //     .then(data => {
-  //         // Handle the response data as needed
-  //         console.log("weather bit: ",data);
-  //     })
-  //     .catch(error => {
-  //         console.error('Error:', error);
-  //     });
+  // 
 
   // ------------------------------------------------------
   const [data, setdata] = useState({});
