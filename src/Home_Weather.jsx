@@ -19,16 +19,7 @@ const Home_Weather = () => {
   // const url = new URL(BASE_URL);
   // url.search = new URLSearchParams(params).toString();
 
-  // // Make the API request using fetch
-  // fetch(url)
-  //     .then(response => {
-  //         // Check if the request was successful (status code 200)
-  //         if (!response.ok) {
-  //             throw new Error('Failed to retrieve data');
-  //         }
-  //         return response.json();
-  //     })
-  // 
+
 
   // ------------------------------------------------------
   const [data, setdata] = useState({});
@@ -46,7 +37,7 @@ const Home_Weather = () => {
     if (event.key === "Enter") {
       await axios
         .get(
-          // `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.API_KEY}`
+       
           `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=c0d290eeee9dd399b017a6d2ba64be7e`
        
         )
