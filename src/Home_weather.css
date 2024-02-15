@@ -1,30 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
 
-  }
- 
-  
-  .main_body{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(93, 164, 221);
-  }
+.main_body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
 
-  .sub_body{
-    height: 80vh;
-    width: 60%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px 15px 3px 3px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-.header{
+.sub_body {
+  /* background-color: red; */
+  height: 80vh;
+  width: 60%;
+  /* background-image: url("./Assets/pexels-pixabay-209831.jpg"); */
+  /* background-blend-mode: darken; */
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 5px 10px rgba(128, 128, 128, 0.884);
+}
+.header {
   background-color: rgb(61, 61, 61);
   height: 7%;
   width: 100%;
@@ -34,30 +35,53 @@
   color: rgba(250, 235, 215, 0.619);
 }
 
-.main_container{
+.main_container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 85%;
 }
 
-.inputContainer{
+.inputContainer {
   display: flex;
   justify-content: center;
+  gap: 5px;
   margin-top: -20px;
+  color: black;
 }
-#locationInput{
-  width: 125px;
-}
-#locationInput::selection{
+.inputContainer input {
   border: none;
+  outline: none;
+ 
+  border-radius: 30px;
+  box-shadow: inset 1px 1px 10px rgb(177, 177, 177);
+  padding: 15px 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.877);
 }
-.head_container{
+#locationInput::selection {
+  border: none;
+  outline: none;
+}
+#searchBTN {
+  background-color: rgb(69, 117, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  /* box-shadow: 1px 1px 5px gray; */
+  width: 48px;
+}
+.head_container {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 25px;
+  /* color: rgba(255, 255, 255, 0.827); */
 }
-.weather_container{
+.weather_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -65,158 +89,49 @@
   margin: 5%;
 }
 
-#main_temp{
+#main_temp {
   margin-top: -10px;
   font-size: 60px;
+  /* color: rgba(255, 255, 255, 0.827); */
 }
-.property_div{
+.property_div {
   margin: 2px;
   display: flex;
   align-items: center;
   gap: 15px;
-  color: gray;
+  /* color: rgba(255, 255, 255, 0.827); */
 }
-.property_div img{
+.property_div img {
   height: 15px;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
-.property_div h5{
+.property_div h5 {
   font-size: 20px;
   font-weight: 400;
 }
 
-.property_div p{
+.property_div p {
   margin-top: 7px;
   font-size: 12px;
   display: flex;
 }
 
-.map_container{
+.map_container {
   display: flex;
   height: 100%;
+  border: none;
+}
+.map_container iframe {
+  padding: 7px;
+  border-radius: 15px 15px 30px 30px;
+  border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .TopBar {
+@media only screen and (max-width: 540px) {
+  .sub_body {
+    /* background-color: red; */
+    height: 100vh;
     width: 100%;
-    height: 12vh;
-    background-color: rgba(95, 123, 160, 0.597);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 0;
   }
-  
-  .TopBarContaniner {
-    width: 80%;
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .searchBar {
-    background-color: aliceblue;
-    width: 400px;
-    height: 50px;
-  
-    border-radius: 50px;
-    padding-left: 20px;
-    padding-right: 3px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .searchBar input {
-    border: none;
-    background: none;
-    font-size: 18px;
-  }
-  
-  .searchBar input:focus {
-    outline: none;
-    border: none;
-  }
-  .searchBar button {
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: rgb(68, 141, 237);
-  }
-  .searchBar button img {
-    height: 25px;
-    width: 25px;
-  }
-  
-  /* --------------------------------------------------------- */
-  
-  
-  .mainBar{
-      width: 100%;
-      height: 44vh;
-  
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-  }
-  
-  /* ------------------------------------------------------------------- */
-  
-  .thirdBar {
-      position: relative;
-      width: 100%;
-      height: 44vh;
-  }
-  
-  .locationMap {
-    position: absolute;
-      width: 100%;
-      height: 44vh;
-      z-index: -10;
-  }
-  
-  .thirdBarContainer{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.455);
-    z-index: 0;
-  }
-  
-  
-  .thirdContent {
-      position: absolute;
-      top: 10%; /* Example: Centering the content vertically */
-      left: 45%; /* Example: Centering the content horizontally */
-    color: white;
-      z-index: 1;
-      text-align: center;
-      
-  
-  }
-  
+}
