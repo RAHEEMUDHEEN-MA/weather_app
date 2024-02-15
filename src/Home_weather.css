@@ -39,19 +39,15 @@
   flex-direction: column;
   width: 100%;
   height: 85%;
-  /* background-color: aqua; */
 }
 
 .inputContainer{
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   margin-top: -20px;
-
 }
 #locationInput{
-  
-  width: 120px;
+  width: 125px;
 }
 #locationInput::selection{
   border: none;
@@ -65,7 +61,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* height: 300px; */
   gap: 5%;
   margin: 5%;
 }
@@ -80,7 +75,6 @@
   align-items: center;
   gap: 15px;
   color: gray;
-  /* background-color: antiquewhite; */
 }
 .property_div img{
   height: 15px;
@@ -89,19 +83,15 @@
 .property_div h5{
   font-size: 20px;
   font-weight: 400;
-
 }
 
 .property_div p{
   margin-top: 7px;
   font-size: 12px;
   display: flex;
-  
-  /* background-color: aqua; */
 }
 
 .map_container{
-  /* background-color: rgb(238, 170, 81); */
   display: flex;
   height: 100%;
 }
