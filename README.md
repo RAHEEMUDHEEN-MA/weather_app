@@ -1,10 +1,11 @@
 
 
-checkmyweathers.netlify.app
+[checkmyweathers.netlify.app](https://checkmyweathers.netlify.app/)
 
 preview :
 
-![Uploading Screenshot 2024-02-15 171304.png…]()
+![Screenshot 2024-02-15 171304](https://github.com/RAHEEMUDHEEN-MA/weather_app/assets/136678042/bfb1f4c5-f71a-4311-a319-1569b7187c89)
+
 
 
 
