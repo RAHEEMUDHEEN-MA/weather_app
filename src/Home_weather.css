@@ -1,8 +1,134 @@
 * {
     margin: 0;
     padding: 0;
+
   }
+ 
   
+  .main_body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(93, 164, 221);
+  }
+
+  .sub_body{
+    height: 80vh;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 15px 3px 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.header{
+  background-color: rgb(61, 61, 61);
+  height: 7%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  color: rgba(250, 235, 215, 0.619);
+}
+
+.main_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85%;
+  /* background-color: aqua; */
+}
+
+.inputContainer{
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+
+}
+#locationInput{
+  
+  width: 120px;
+}
+#locationInput::selection{
+  border: none;
+}
+.head_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.weather_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* height: 300px; */
+  gap: 5%;
+  margin: 5%;
+}
+
+#main_temp{
+  margin-top: -10px;
+  font-size: 60px;
+}
+.property_div{
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: gray;
+  /* background-color: antiquewhite; */
+}
+.property_div img{
+  height: 15px;
+  opacity: 0.5;
+}
+.property_div h5{
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+.property_div p{
+  margin-top: 7px;
+  font-size: 12px;
+  display: flex;
+  
+  /* background-color: aqua; */
+}
+
+.map_container{
+  /* background-color: rgb(238, 170, 81); */
+  display: flex;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .TopBar {
     width: 100%;
     height: 12vh;
