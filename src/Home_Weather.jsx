@@ -13,15 +13,7 @@ import humidityIMG from "./Assets/icons8-water-drop-50.png";
 import clearSky from "./Assets/Clear_sky.png";
 
 const Home_Weather = () => {
-  //   const API_KEY = '9d988ae74f104cb19ffdc60a930b1e1a';
-  // const BASE_URL = 'https://api.weatherbit.io/v2.0/current';
 
-  // // Specify the parameters (e.g., latitude, longitude) for your request
-  // const params = {
-  //     lat: 40.7128,
-  //     lon: -74.0060,
-  //     key: API_KEY
-  // };
 
   // // Construct the URL with query parameters
   // const url = new URL(BASE_URL);
