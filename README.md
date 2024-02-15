@@ -1,3 +1,15 @@
+
+#Weather app
+checkmyweathers.netlify.app
+
+preview :
+
+![Uploading Screenshot 2024-02-15 171304.png…]()
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
