@@ -4,7 +4,8 @@
 
 preview :
 
-![Screenshot 2024-02-15 171304](https://github.com/RAHEEMUDHEEN-MA/weather_app/assets/136678042/bfb1f4c5-f71a-4311-a319-1569b7187c89)
+![Screenshot 2024-02-15 182011](https://github.com/RAHEEMUDHEEN-MA/weather_app/assets/136678042/b13f43ca-c4a7-4859-8a09-6af8aa71041d)
+
 
 
 
