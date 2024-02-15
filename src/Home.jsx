@@ -7,7 +7,7 @@ import rainIMG from "./Assets/icons8-umbrella-52.png";
 import humidityIMG from "./Assets/icons8-water-drop-50.png";
 import clearSky from "./Assets/Clear_sky.png";
 
-const Home_Weather = () => {
+const Home = () => {
 
   const [data, setdata] = useState({});
 
@@ -173,4 +173,4 @@ const Home_Weather = () => {
   );
 };
 
-export default Home_Weather;
+export default Home;

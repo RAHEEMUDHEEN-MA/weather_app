@@ -1,10 +1,10 @@
 
-import Home_Weather from './Home_Weather';
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
-      <Home_Weather/>
+      <Home/>
       
     </div>
   );
