@@ -86,7 +86,7 @@ const Home = () => {
   //     color: "white",
   //   };
   // }
-  // ------------------------------------------------------------
+  // ---------------------------------------------------------------
 
   const googleMapUrl = `https://www.google.com/maps/embed/v1/place?q=${latitude},${longitude}&zoom=13&key=AIzaSyAq15HbfCRMW7RqNb5LUNyOLyfzpYI0wl4&maptype=satellite`;
 
